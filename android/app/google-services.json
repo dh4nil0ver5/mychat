@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1046647800922",
+    "project_id": "flutter-eccomerce-c38ba",
+    "storage_bucket": "flutter-eccomerce-c38ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046647800922:android:ff72d518f1f2c9f3b88463",
+        "android_client_info": {
+          "package_name": "com.mychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046647800922-jrmpu3f6brfc7uoqhmng3hpun4jd393p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbVQxnhbpOW1FIUNxG81sDZDTTS452POU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046647800922-jrmpu3f6brfc7uoqhmng3hpun4jd393p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
