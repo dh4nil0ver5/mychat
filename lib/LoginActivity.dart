@@ -6,7 +6,8 @@ class LoginActivity extends StatefulWidget{
   _LoginActivityState createState() => _LoginActivityState();
 }
 class _LoginActivityState extends State<LoginActivity>{
-    bool pressAttention = true;
+    bool pressSignIn = true;
+    bool pressSignUp = true;
     @override
     Widget build(BuildContext context) {
       return  MaterialApp(
@@ -82,8 +83,8 @@ class _LoginActivityState extends State<LoginActivity>{
                               shape: new RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(30.0),
                               ),
-                              color: pressAttention ? Colors.green : Colors.blue,
-                              onPressed: () => setState(() => pressAttention = !pressAttention),
+                              color: pressSignIn ? Colors.green : Colors.blue,
+                              onPressed: () => setState(() => pressSignIn = !pressSignIn),
                             ),
                             RaisedButton(
                               child: new Text('Sign up'),
@@ -91,24 +92,17 @@ class _LoginActivityState extends State<LoginActivity>{
                               shape: new RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(30.0),
                               ),
-                              color: pressAttention ? Colors.deepOrangeAccent : Colors.blue,
-                              onPressed: () => setState(() => pressAttention = !pressAttention),
+                              color: Colors.redAccent,
+                              onPressed: () {
+                                pressSignUp = !pressSignUp;
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUp()));
+                              },
                             ),
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
-
-                  // child: Text(
-                  //   'Hello Gradient!',
-                  //   style: TextStyle(
-                  //     fontSize: 48.0,
-                  //     fontWeight: FontWeight.bold,
-                  //     color: Colors.white,
-                  //   ),
-                  // ),
-
                 ),
               ),
             ),
