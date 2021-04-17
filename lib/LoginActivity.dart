@@ -95,8 +95,7 @@ class _LoginActivityState extends State<LoginActivity>{
                               ),
                               color: Colors.redAccent,
                               onPressed: () {
-                                pressSignUp = !pressSignUp;
-                                Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUp()));
+                                _navigateToNextScreen(context);
                               },
                             ),
                           ],
@@ -109,5 +108,8 @@ class _LoginActivityState extends State<LoginActivity>{
             ),
           ),
       );
+    }
+    void _navigateToNextScreen(BuildContext context) {
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUp()));
     }
 }
